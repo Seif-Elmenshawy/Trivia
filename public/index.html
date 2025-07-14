@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia.io</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="fav.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div class="name" id="name">
+        <div>
+            <h1>Trivia.io</h1>
+            <div>
+                <h3>Enter your Name</h3>
+                <form>
+                    <input type="text" id="name-input" placeholder="Enter your name" required>
+                    <button type="button" id="start-button" onclick="entergame()">Enter The Game</button>
+                </form>
+        </div></div>
+    </div>
+    <div id="game">
+        <div id="chat">
+            <ul id="messages"></ul>
+            <form>
+                <input type="text" id="input" placeholder="Type your message here" required>
+                <button type="button" id="send">Send</button>
+            </form>
+        </div>
+        <div id="questions">
+        
+        </div>
+        <div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
